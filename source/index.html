@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="../node_modules/normalize.css/normalize.css" rel="stylesheet">
+
+    <!-- <script src="js/picturefill.min.js"></script>
+    <script src="js/svgxuse.min.js"></script> -->
+
+    <title>Тестовое задание Onpoint</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="page-header">
+        <label class="page-header__label page-header__label--active" for="slider">
+          <input class="page-header__input hidden" type="radio" name="slider">
+        </label>
+        <label class="page-header__label" for="slider">
+          <input class="page-header__input hidden" type="radio" name="slider">
+        </label>
+        <label class="page-header__label" for="slider">
+          <input class="page-header__input hidden" type="radio" name="slider">
+        </label>
+      </header>
+
+      <main class="page-main">
+        <section class="page-main__slide first-page">
+          <h1 class="first-page__header">Всегда ли цели терапии СД2 на поверхности?</h1>
+          <ul class="first-page__list">
+            <li class="first-page__list-item">Цель по HbA1c</li>
+            <li class="first-page__list-item">Гипогликемия</li>
+            <li class="first-page__list-item">Осложнения СД</li>
+            <li class="first-page__list-item">СС риски</li>
+          </ul>
+        </section>
+
+        <section class="page-main__slide second-page hidden">
+          <h1 class="second-page__header">Основа терапии - патогенез СД2</h1>
+        </section>
+
+        <section class="page-main__slide third-page hidden">
+          <section class="third-page__section third-page__section--first">
+            <h1 class="third-page__section-header">Звенья патогенеза СД2</h1>
+            <ul class="third-page__section-list">
+              <h2 class="third-page__section-list-header">Гипергликемия</h2>
+              <li class="third-page__section-item">β-клетки</li>
+              <li class="third-page__section-item">Мышцы</li>
+              <li class="third-page__section-item">Печень</li>
+            </ul>
+          </section>
+
+          <section class="third-page__section third-page__section--second">
+            <h1 class="third-page__section-header">Смертельный октет</h1>
+            <ul class="third-page__section-list">
+              <h2 class="third-page__section-list-header">Гипергликемия</h2>
+              <li class="third-page__section-item">β-клетки</li>
+              <li class="third-page__section-item">Инкретиновый эффект</li>
+              <li class="third-page__section-item">Дефект α-клеток</li>
+              <li class="third-page__section-item">Жировые клетки</li>
+              <li class="third-page__section-item">Мышцы</li>
+              <li class="third-page__section-item">Печень</li>
+              <li class="third-page__section-item">Головной мозг</li>
+              <li class="third-page__section-item">Почки</li>
+            </ul>
+          </section>
+
+          <section class="third-page__section third-page__section--third">
+            <h1 class="third-page__section-header">Звенья патогенеза СД2</h1>
+            <ul class="third-page__section-list">
+              <h2 class="third-page__section-list-header">Гипергликемия</h2>
+              <li class="third-page__section-item">β-клетки</li>
+              <li class="third-page__section-item">инкретинового эффекта</li>
+              <li class="third-page__section-item">Дефект α-клеток</li>
+
+              <h3 class="third-page__section-item-header">Инсулинорезистентность</h3>
+              <li class="third-page__section-item">Жировые клетки</li>
+              <li class="third-page__section-item">Мышцы</li>
+              <li class="third-page__section-item">Печень</li>
+
+              <li class="third-page__section-item">Головной мозг</li>
+              <li class="third-page__section-item">Микрофлора кишечника</li>
+              <li class="third-page__section-item">Нарушение иммунной регуляции/воспаление</li>
+              <li class="third-page__section-item">Желудок</li>
+              <li class="third-page__section-item">Почки</li>
+            </ul>
+          </section>
+
+          <section class="third-page__toggle">
+            <label for="toggle"><input type="radio" name="toggle"></label>
+            <label for="toggle"><input type="radio" name="toggle"></label>
+            <label for="toggle"><input type="radio" name="toggle"></label>
+          </section>
+        </section>
+      </main>
+
+      <footer class="page-footer hidden">
+        <button class="page-footer__btn" type="button">Листайте вниз</button>
+      </footer>
+    </div>
+  </body>
+</html>
