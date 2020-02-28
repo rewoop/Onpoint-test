@@ -316,7 +316,7 @@ img {
   content: "";
   width: 82px;
   height: 77px;
-  background-image: url("../img/TopLeft.png");
+  background-image: url("../img/first-slider-stones/TopLeft.png");
   position: absolute;
   top: 322px;
   left: 167px;
@@ -326,7 +326,7 @@ img {
   content: "";
   width: 295px;
   height: 411px;
-  background-image: url("../img/TopRight.png");
+  background-image: url("../img/first-slider-stones/TopRight.png");
   position: absolute;
   top: 70px;
   right: 0;
@@ -336,7 +336,7 @@ img {
   content: "";
   width: 207px;
   height: 202px;
-  background-image: url("../img/BotLeft.png");
+  background-image: url("../img/first-slider-stones/BotLeft.png");
   position: absolute;
   bottom: 430px;
   left: 479px;
@@ -346,7 +346,7 @@ img {
   content: "";
   width: 149px;
   height: 151px;
-  background-image: url("../img/BotRight.png");
+  background-image: url("../img/first-slider-stones/BotRight.png");
   position: absolute;
   bottom: 222px;
   right: 505px;
@@ -367,6 +367,26 @@ img {
   background-size: cover;
 }
 
+.third-page__section--first::before {
+  content: "";
+  width: 433px;
+  height: 410px;
+  background-image: url("../img/third-slider-stones/1988/1.png");
+  position: absolute;
+  bottom: 18px;
+  left: 42px;
+}
+
+.third-page__section--first::after {
+  content: "";
+  width: 213px;
+  height: 202px;
+  background-image: url("../img/third-slider-stones/1988/2.png");
+  position: absolute;
+  top: 450px;
+  right: 510px;
+}
+
 .third-page__section-header {
   margin: 0;
   font-family: "Gotham Regular", "Arial", sans-serif;
@@ -375,14 +395,30 @@ img {
   letter-spacing: -0.01em;
   color: #ffffff;
   font-weight: 400;
+  position: absolute;
+  top: 208px;
+  left: 166px;
 }
 
-.third-page__section-list {
+.third-page__section-header::before {
+  content: "";
+  width: 76px;
+  height: 77px;
+  background-image: url("../img/third-slider-stones/1988/3.png");
+  position: absolute;
+  top: 0;
+  left: 1661px;
+}
+
+.first-list {
   margin: 0;
   list-style: none;
+  position: relative;
+  width: 2048px;
+  height: 1536px;
 }
 
-.third-page__section-list-header {
+.first-list__header {
   margin: 0;
   font-family: "Lato Medium", "Arial", sans-serif;
   font-size: 39.7px;
@@ -393,15 +429,88 @@ img {
   border: 2px solid #ffffff;
   display: inline-block;
   padding: 66px 110px;
+  position: absolute;
+  bottom: 463px;
+  left: 50%;
+  margin-left: -227px;
 }
 
-.third-page__section-item {
+.first-list__item {
   font-family: "Lato Medium", "Arial", sans-serif;
   font-size: 45.5px;
   line-height: 1.2;
   font-weight: 500;
   letter-spacing: -0.01em;
   color: #ffffff;
+  position: absolute;
+}
+
+.first-list__item--first {
+  top: 479px;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.first-list__item--second {
+  bottom: 686px;
+  left: 493px;
+}
+
+.first-list__item--third {
+  bottom: 686px;
+  right: 440px;
+}
+
+.first-list__image {
+  position: absolute;
+  z-index: 1;
+}
+
+.first-list__image--first {
+  top: 76px;
+  left: 50%;
+  margin-left: -83px;
+}
+
+.first-list__image--second {
+  top: 87px;
+  left: -12px;
+}
+
+.first-list__image--third {
+  top: 87px;
+  right: -22px;
+}
+
+.first-list__image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 166px;
+  height: 166px;
+}
+
+.first-list__image-wrapper::before {
+  content: "";
+  width: 166px;
+  height: 166px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  opacity: 0.2;
+  position: absolute;
+  z-index: -1;
+}
+
+.arrows {
+  width: 1500px;
+  height: 1000px;
+  position: absolute;
+  top: 25%;
+  left: 15%;
+}
+
+.arrows__svg {
+  position: absolute;
 }
 /* КОНЕЦ ПЕРВОЙ СТРАНИЦЫ ТРЕТЬЕГО СЛАЙДЕРА (1988) */
 
