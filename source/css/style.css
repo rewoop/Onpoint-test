@@ -367,27 +367,29 @@ img {
   background-size: cover;
 }
 
-.third-page__section--first::before {
+.first-slide::before {
   content: "";
   width: 433px;
   height: 410px;
-  background-image: url("../img/third-slider-stones/1988/1.png");
+  background-image: url("../img/third-slider-stones/1.png");
   position: absolute;
   bottom: 18px;
   left: 42px;
+  opacity: 0.44;
 }
 
-.third-page__section--first::after {
+.first-slide::after {
   content: "";
   width: 213px;
   height: 202px;
-  background-image: url("../img/third-slider-stones/1988/2.png");
+  background-image: url("../img/third-slider-stones/2.png");
   position: absolute;
   top: 450px;
   right: 510px;
+  opacity: 0.44;
 }
 
-.third-page__section-header {
+.slide-header {
   margin: 0;
   font-family: "Gotham Regular", "Arial", sans-serif;
   font-size: 60px;
@@ -395,38 +397,48 @@ img {
   letter-spacing: -0.01em;
   color: #ffffff;
   font-weight: 400;
+}
+
+.first-slide__header {
   position: absolute;
   top: 208px;
   left: 166px;
 }
 
-.third-page__section-header::before {
+.first-slide__header::before {
   content: "";
   width: 76px;
   height: 77px;
-  background-image: url("../img/third-slider-stones/1988/3.png");
+  background-image: url("../img/third-slider-stones/3.png");
   position: absolute;
   top: 0;
   left: 1661px;
+  opacity: 0.44;
 }
 
-.first-list {
+.first-list,
+.second-list,
+.third-list {
   margin: 0;
+  padding: 0;
   list-style: none;
   position: relative;
   width: 2048px;
   height: 1536px;
 }
 
-.first-list__header {
+.list-header {
   margin: 0;
   font-family: "Lato Medium", "Arial", sans-serif;
-  font-size: 39.7px;
-  line-height: 1.2;
+  line-height: 1;
   letter-spacing: -0.01em;
   color: #ffffff;
   font-weight: 500;
   border: 2px solid #ffffff;
+}
+
+.first-list__header {
+  font-size: 39.7px;
   display: inline-block;
   padding: 66px 110px;
   position: absolute;
@@ -435,13 +447,16 @@ img {
   margin-left: -227px;
 }
 
-.first-list__item {
+.list-item {
   font-family: "Lato Medium", "Arial", sans-serif;
-  font-size: 45.5px;
-  line-height: 1.2;
+  line-height: 1;
   font-weight: 500;
   letter-spacing: -0.01em;
   color: #ffffff;
+}
+
+.first-list__item {
+  font-size: 45.5px;
   position: absolute;
 }
 
@@ -461,7 +476,9 @@ img {
   right: 440px;
 }
 
-.first-list__image {
+.first-list__image,
+.second-list__image,
+.third-list__image {
   position: absolute;
   z-index: 1;
 }
@@ -482,23 +499,42 @@ img {
   right: -22px;
 }
 
-.first-list__image-wrapper {
+.image-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 166px;
-  height: 166px;
 }
 
-.first-list__image-wrapper::before {
+.image-wrapper::before {
   content: "";
-  width: 166px;
-  height: 166px;
   border-radius: 50%;
   background-color: #ffffff;
   opacity: 0.2;
   position: absolute;
   z-index: -1;
+}
+
+.first-list__image-wrapper,
+.first-list__image-wrapper::before {
+  width: 166px;
+  height: 166px;
+}
+
+.item-number,
+.second-list__image-wrapper span {
+  font-family: "Lato Semibold", "Arial", sans-serif;
+  font-size: 72.8px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+}
+
+.first-list__item-number {
+  position: absolute;
+  left: 50%;
+  margin-left: -21px;
+  top: -73px;
 }
 
 .arrows {
@@ -514,7 +550,236 @@ img {
 }
 /* КОНЕЦ ПЕРВОЙ СТРАНИЦЫ ТРЕТЬЕГО СЛАЙДЕРА (1988) */
 
+/* ВТОРАЯ СТРАНИЦА ТРЕТЬЕГО СЛАЙДЕРА (2009) */
 
+.second-slide::before {
+  content: "";
+  width: 213px;
+  height: 202px;
+  background-image: url("../img/third-slider-stones/2.png");
+  position: absolute;
+  top: 470px;
+  left: 90px;
+  opacity: 0.44;
+}
+
+.second-slide::after {
+  content: "";
+  width: 251px;
+  height: 395px;
+  background-image: url("../img/third-slider-stones/4.png");
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.second-slide__header::before {
+  content: "";
+  width: 76px;
+  height: 77px;
+  background-image: url("../img/third-slider-stones/3.png");
+  position: absolute;
+  bottom: 13px;
+  left: 770px;
+  opacity: 0.44;
+}
+
+.second-slide__header {
+  position: absolute;
+  top: 209px;
+  left: 170px;
+}
+
+.second-list__header {
+  font-size: 50px;
+  padding: 115px 214px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -142px;
+  margin-left: -387.5px;
+}
+
+.second-list__item {
+  font-size: 40px;
+  position: absolute;
+}
+
+.second-list__item--first {
+  left: 50%;
+  top: 370px;
+  margin-left: -60.5px;
+}
+
+.second-list__item--second {
+  width: 270px;
+  height: 84px;
+  text-align: right;
+  left: 364px;
+  top: 464px;
+}
+
+.second-list__item--third {
+  width: 164px;
+  height: 78px;
+  text-align: left;
+  right: 460px;
+  top: 464px;
+}
+
+.second-list__item--fourth {
+  width: 177px;
+  height: 78px;
+  text-align: left;
+  top: 826px;
+  right: 235px;
+}
+
+.second-list__item--fifth {
+  bottom: 315px;
+  right: 636px;
+}
+
+.second-list__item--sixth {
+  left: 50%;
+  bottom: 315px;
+  margin-left: -60.5px;
+}
+
+.second-list__item--seventh {
+  width: 164px;
+  height: 78px;
+  text-align: center;
+  bottom: 280px;
+  left: 637px;
+}
+
+.second-list__item--eighth {
+  top: 826px;
+  left: 300px;
+}
+
+.second-list__image-wrapper,
+.second-list__image-wrapper::before {
+  width: 121px;
+  height: 121px;
+}
+
+.second-list__image--first {
+  left: 50%;
+  top: 70px;
+  margin-left: -60.5px;
+}
+
+.second-list__image--second {
+  left: 307px;
+  top: -24px;
+}
+
+.second-list__image--third {
+  right: 180px;
+  top: -24px;
+}
+
+.second-list__image--fourth {
+  bottom: 71px;
+  right: 202px;
+}
+
+.second-list__image--fifth {
+  bottom: 125px;
+  left: 50%;
+  margin-left: -60.5px;
+}
+
+.second-list__image--sixth {
+  left: 50%;
+  bottom: 125px;
+  margin-left: -60.5px;
+}
+
+.second-list__image--seventh {
+  bottom: 160px;
+  left: 50%;
+  margin-left: -60.5px;
+}
+
+.second-list__image--eighth {
+  bottom: 16px;
+  left: 150px;
+}
+
+.second-list__item-number {
+  position: absolute;
+  left: 50%;
+  margin-left: -21px;
+  top: -73px;
+}
+
+.second-list__item-number--fourth {
+  left: 0;
+  margin-left: 0;
+}
+
+.second-list__item-number--eighth {
+  left: auto;
+  right: 0;
+  margin-left: 0;
+}
+
+/* КОНЕЦ ВТОРОЙ СТРАНИЦЫ ТРЕТЬЕГО СЛАЙДЕРА (2009) */
+
+/* СЕКЦИЯ ПЕРЕКЛЮЧАТЕЛЕЙ СЛАЙДОВ */
+
+.toggle {
+  width: 2048px;
+  height: 1536px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 0 150px 52px 150px;
+}
+
+.toggle__label {
+  font-family: "Gotham Regular", "Arial", sans-serif;
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+}
+
+.toggle__line,
+.toggle__active-line {
+  width: 618px;
+  height: 22px;
+  background-color: #d1eaff;
+  position: absolute;
+  bottom: 148px;
+  left: 50%;
+  margin-left: -618px;
+}
+
+.toggle__active-line {
+  opacity: 0.3;
+  bottom: 0;
+  left: 618px;
+  margin: 0;
+}
+
+.toggle__pin {
+  width: 87px;
+  height: 111px;
+  background-image: url("../img/pin.png");
+  position: absolute;
+  top: -46px;
+  right: -43.5px;
+}
+
+/* КОНЕЦ СЕКЦИИ ПЕРЕКЛЮЧАТЕЛЕЙ СЛАЙДОВ */
 
 /* КОНЕЦ ТРЕТЬЕГО СЛАЙДЕРА */
 
