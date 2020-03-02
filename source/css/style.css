@@ -437,7 +437,7 @@ img {
   border: 2px solid #ffffff;
 }
 
-.first-list__header {
+.first-slide__list-header {
   font-size: 39.7px;
   display: inline-block;
   padding: 66px 110px;
@@ -590,7 +590,7 @@ img {
   left: 170px;
 }
 
-.second-list__header {
+.second-slide__list-header {
   font-size: 50px;
   padding: 115px 214px;
   position: absolute;
@@ -728,6 +728,249 @@ img {
 }
 
 /* КОНЕЦ ВТОРОЙ СТРАНИЦЫ ТРЕТЬЕГО СЛАЙДЕРА (2009) */
+
+/* ТРЕТЬЯ СТРАНИЦА ТРЕТЬЕГО СЛАЙДЕРА (2016) */
+
+.third-slide::before {
+  content: "";
+  width: 66px;
+  height: 77px;
+  background-image: url("../img/third-slider-stones/5.png");
+  position: absolute;
+  top: 206px;
+  left: 0;
+}
+
+.third-slide::after {
+  content: "";
+  width: 176px;
+  height: 203px;
+  background-image: url("../img/third-slider-stones/6.png");
+  position: absolute;
+  top: 422px;
+  right: 0;
+}
+
+.third-list::after {
+  content: "";
+  width: 385px;
+  height: 361px;
+  background-image: url("../img/third-slider-stones/7.png");
+  position: absolute;
+  bottom: 0;
+  left: 305px;
+}
+
+.third-slide__header {
+  position: absolute;
+  top: 209px;
+  left: 170px;
+}
+
+.third-slide__list-header {
+  font-size: 50px;
+  border: none;
+  position: absolute;
+  bottom: 505px;
+  left: 50%;
+  margin-left: -172px;
+}
+
+.third-list__item {
+  font-size: 40px;
+  position: absolute;
+}
+
+.third-list__item--first {
+  font-size: 50px;
+  left: 50%;
+  top: 298px;
+  margin-left: -63px;
+}
+
+.third-list__item--second {
+  width: 270px;
+  height: 84px;
+  text-align: right;
+  left: 737px;
+  top: 760px;
+}
+
+.third-list__item--third {
+  right: 661px;
+  top: 769px;
+}
+
+.third-list__item-posttext {
+  display: block;
+  padding-top: 63px;
+  padding-left: 24px;
+  font-size: 30px;
+}
+
+.third-list__item-posttext--amilin {
+  padding: 0;
+  position: absolute;
+  top: -160px;
+  left: 217px;
+}
+
+.third-list__item-header {
+  margin: 0;
+  padding: 48px 0 0 85px;
+  font-size: 30px;
+  position: absolute;
+  top: 655px;
+  right: 220px;
+}
+
+.third-list__item-header::after {
+  content: "";
+  width: 520px;
+  height: 621px;
+  background-image: url("../img/mask.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.third-list__item--fourth {
+  bottom: 306px;
+  left: 1576px;
+}
+
+.third-list__item--fifth {
+  bottom: 474px;
+  left: 1576px;
+}
+
+.third-list__item--sixth {
+  bottom: 641px;
+  left: 1576px;
+}
+
+.third-list__item--seventh {
+  top: 532px;
+  left: 1576px;
+}
+
+.third-list__item--eighth {
+  width: 235px;
+  height: 78px;
+  text-align: right;
+  top: 518px;
+  left: 274px;
+}
+
+.third-list__item--ninth {
+  width: 415px;
+  height: 84px;
+  text-align: right;
+  top: 694px;
+  left: 93px;
+}
+
+.third-list__item--tenth {
+  top: 974px;
+  left: 341px;
+}
+
+.third-list__item--eleventh {
+  bottom: 304px;
+  left: 850px;
+}
+
+.third-list__image-wrapper,
+.third-list__image-wrapper::before {
+  width: 121px;
+  height: 121px;
+}
+
+.third-list__image-wrapper--first,
+.third-list__image-wrapper--first::before {
+  width: 166px;
+  height: 166px;
+}
+
+.third-list__image--first {
+  left: 50%;
+  top: 70px;
+  margin-left: -83px;
+}
+
+.third-list__image--fourth {
+  bottom: -5px;
+  left: -145px;
+}
+
+.third-list__image--fifth {
+  bottom: -5px;
+  left: -145px;
+}
+
+.third-list__image--sixth {
+  left: -145px;
+  bottom: -5px;
+}
+
+.third-list__image--seventh {
+  bottom: -17px;
+  left: -145px;
+}
+
+.third-list__image--eighth {
+  bottom: 12px;
+  right: -146px;
+}
+
+.third-list__image--ninth {
+  bottom: 21px;
+  right: -146px;
+}
+
+.third-list__image--tenth {
+  bottom: -28px;
+  right: -146px;
+}
+
+.third-list__image--eleventh {
+  bottom: -5px;
+  right: -138px;
+}
+
+.third-list__item-number {
+  position: absolute;
+  left: 50%;
+  margin-left: -21px;
+  top: -73px;
+}
+
+.third-list__item-number--left {
+  left: 0;
+  margin-left: 0;
+}
+
+.third-list__item-number--right {
+  left: auto;
+  right: 0;
+  margin-left: 0;
+}
+
+.third-list__item-number--third {
+  top: -81px;
+}
+
+.item-svg {
+  position: absolute;
+  margin-left: -30px;
+}
+
+.item-svg--effect {
+  margin-left: -305px;
+}
+
+/* КОНЕЦ ТРЕТЬЕЙ СТРАНИЦЫ ТРЕТЬЕГО СЛАЙДЕРА (2016) */
 
 /* СЕКЦИЯ ПЕРЕКЛЮЧАТЕЛЕЙ СЛАЙДОВ */
 
