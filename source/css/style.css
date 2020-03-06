@@ -304,9 +304,18 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+.second-page__wrapper {
+  width: 2048px;
+  height: 1536px;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .second-page__header {
@@ -320,7 +329,7 @@ img {
   margin-top: -300px;
 }
 
-.second-page::before {
+.second-page__wrapper::before {
   content: "";
   width: 82px;
   height: 77px;
@@ -330,7 +339,7 @@ img {
   left: 167px;
 }
 
-.second-page::after {
+.second-page__wrapper::after {
   content: "";
   width: 295px;
   height: 411px;
@@ -373,9 +382,27 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  overflow-x: hidden;
 }
 
-.first-slide::before {
+.third-page__wrapper {
+  width: 2048px;
+  height: 1536px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  overflow-x: visible;
+}
+
+.first-slide,
+.second-slide,
+.third-slide {
+  position: relative;
+}
+
+.first-slide__wrapper::before {
   content: "";
   width: 433px;
   height: 410px;
@@ -386,7 +413,7 @@ img {
   opacity: 0.44;
 }
 
-.first-slide::after {
+.first-slide__wrapper::after {
   content: "";
   width: 213px;
   height: 202px;
@@ -560,7 +587,7 @@ img {
 
 /* ВТОРАЯ СТРАНИЦА ТРЕТЬЕГО СЛАЙДЕРА (2009) */
 
-.second-slide::before {
+.second-slide__wrapper::before {
   content: "";
   width: 213px;
   height: 202px;
@@ -571,7 +598,7 @@ img {
   opacity: 0.44;
 }
 
-.second-slide::after {
+.second-slide__wrapper::after {
   content: "";
   width: 251px;
   height: 395px;
@@ -739,7 +766,7 @@ img {
 
 /* ТРЕТЬЯ СТРАНИЦА ТРЕТЬЕГО СЛАЙДЕРА (2016) */
 
-.third-slide::before {
+.third-slide__wrapper::before {
   content: "";
   width: 66px;
   height: 77px;
@@ -749,7 +776,7 @@ img {
   left: 0;
 }
 
-.third-slide::after {
+.third-slide__wrapper::after {
   content: "";
   width: 176px;
   height: 203px;
@@ -872,7 +899,7 @@ img {
 }
 
 .third-list__item--ninth {
-  width: 415px;
+  width: 419px;
   height: 84px;
   text-align: right;
   top: 694px;
@@ -974,38 +1001,23 @@ img {
   margin-left: -30px;
 }
 
-.item-svg--effect {
-  margin-left: -305px;
-}
-
 /* КОНЕЦ ТРЕТЬЕЙ СТРАНИЦЫ ТРЕТЬЕГО СЛАЙДЕРА (2016) */
 
 /* СЕКЦИЯ ПЕРЕКЛЮЧАТЕЛЕЙ СЛАЙДОВ */
 
 .toggle {
   width: 2048px;
-  height: 1536px;
+  margin-left: 109px;
   position: absolute;
-  top: 0;
-  left: 0;
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
   padding: 0 150px 52px 150px;
 }
 
-.toggle__label {
-  font-family: "Gotham Regular", "Arial", sans-serif;
-  font-size: 40px;
-  line-height: 1;
-  font-weight: 400;
-  letter-spacing: -0.01em;
-  color: #ffffff;
-}
-
 .toggle__line,
 .toggle__active-line {
-  width: 618px;
+  width: 0;
   height: 22px;
   background-color: #d1eaff;
   position: absolute;
@@ -1015,9 +1027,10 @@ img {
 }
 
 .toggle__active-line {
+  width: 1236px;
   opacity: 0.3;
   bottom: 0;
-  left: 618px;
+  left: 0;
   margin: 0;
 }
 
@@ -1030,6 +1043,23 @@ img {
   right: -43.5px;
 }
 
+.toggle__date-wrapper {
+  width: 1246px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.toggle__date {
+  margin: 0;
+  padding: 0;
+  font-family: "Gotham Regular", "Arial", sans-serif;
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+}
+
 /* КОНЕЦ СЕКЦИИ ПЕРЕКЛЮЧАТЕЛЕЙ СЛАЙДОВ */
 
 /* КОНЕЦ ТРЕТЬЕГО СЛАЙДЕРА */
@@ -1038,11 +1068,13 @@ img {
 /* ФУТЕР */
 
 .page-footer {
-  margin-top: -145px;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  margin-left: -109px;
 }
 
 .page-footer__slide-down {
@@ -1074,7 +1106,7 @@ img {
   background-image: url("../img/slide-down.png");
   position: absolute;
   bottom: -35px;
-  left: 0px;
+  left: -920px;
 }
 
 /* КОНЕЦ ФУТЕРА */
