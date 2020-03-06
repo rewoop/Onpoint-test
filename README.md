@@ -1,6 +1,14 @@
-Тестовое задание для компании Onpoint.
+#Тестовое задание для компании Onpoint.
+<hr>
+[Ссылка на задание.](https://sergeyguns.github.io/onpoint-task/)
+<hr>
+Используемые технологии:
+  -**Gulp**
+  -**nodejs**
+  -**postCSS**
+  -**Vanilla JS**
+  -**BEM**
+  -**Git**
 
-Ссылка на задание: https://sergeyguns.github.io/onpoint-task/
 
-
-Использованные технологии:
+Программа запускается командой - `npm i && npm start`.
