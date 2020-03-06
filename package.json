@@ -8,6 +8,8 @@
     "autoprefixer": "9.5.x",
     "browser-sync": "2.26.x",
     "del": "^5.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-htmlacademy": "^0.5.2",
     "gulp": "4.0.x",
     "gulp-csso": "^4.0.1",
     "gulp-htmlmin": "^5.0.1",
@@ -25,8 +27,9 @@
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/css/style.css\" --syntax html",
-    "test": "npm run editorconfig && npm run stylelint",
+    "stylelint": "stylelint \"source/css/style.css\"",
+    "eslint": "eslint source/js/script.js",
+    "test": "npm run editorconfig && npm run stylelint && npm run eslint",
     "build": "gulp build",
     "start": "gulp start"
   },

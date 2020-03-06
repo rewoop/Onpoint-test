@@ -106,7 +106,6 @@ img {
 }
 
 /* БЛОК ОБЩИХ СТИЛЕЙ */
-
 .wrapper {
   width: 2048px;
   height: 1536px;
@@ -122,11 +121,9 @@ img {
 .page-main {
   overflow-x: hidden;
 }
-
 /* КОНЕЦ БЛОКА ОБЩИХ СТИЛЕЙ */
 
 /* БЛОК ПЕРЕКЛЮЧАТЕЛЕЙ СЛАЙДЕРА */
-
 .page-header {
   display: flex;
   flex-direction: column;
@@ -150,11 +147,9 @@ img {
 .page-header__label--active {
   background-color: #f78b1f;
 }
-
 /* КОНЕЦ БЛОКА ПЕРЕКЛЮЧАТЕЛЕЙ СЛАЙДЕРА */
 
 /* ПЕРВЫЙ СЛАЙДЕР */
-
 .first-page {
   width: 2048px;
   height: 1536px;
@@ -213,7 +208,7 @@ img {
 
 .first-page__pulse {
   border-radius: 50%;
-  background-color: rgba(247,139,31,0.21);
+  background-color: rgba(247, 139, 31, 0.21);
   border: 2px solid #d56900;
   position: absolute;
 }
@@ -284,19 +279,15 @@ img {
 .first-page__pulse--third::before,
 .first-page__pulse--third::after,
 .first-page__pulse--fourth::before,
-.first-page__pulse--fourth::after{
+.first-page__pulse--fourth::after {
   width: 10px;
   height: 10px;
   margin-top: -5px;
   margin-left: -5px;
 }
-
-
-
 /* КОНЕЦ ПЕРВОГО СЛАЙДЕРА */
 
 /* ВТОРОЙ СЛАЙДЕР */
-
 .second-page {
   width: 2048px;
   height: 1536px;
@@ -368,13 +359,10 @@ img {
   bottom: 222px;
   right: 505px;
 }
-
 /* КОНЕЦ ВТОРОГО СЛАЙДЕРА */
 
 /* ТРЕТИЙ СЛАЙДЕР */
-
 /* ПЕРВАЯ СТРАНИЦА ТРЕТЬЕГО СЛАЙДЕРА (1988) */
-
 .third-page {
   width: 2048px;
   height: 1536px;
@@ -586,7 +574,6 @@ img {
 /* КОНЕЦ ПЕРВОЙ СТРАНИЦЫ ТРЕТЬЕГО СЛАЙДЕРА (1988) */
 
 /* ВТОРАЯ СТРАНИЦА ТРЕТЬЕГО СЛАЙДЕРА (2009) */
-
 .second-slide__wrapper::before {
   content: "";
   width: 213px;
@@ -761,11 +748,9 @@ img {
   right: 0;
   margin-left: 0;
 }
-
 /* КОНЕЦ ВТОРОЙ СТРАНИЦЫ ТРЕТЬЕГО СЛАЙДЕРА (2009) */
 
 /* ТРЕТЬЯ СТРАНИЦА ТРЕТЬЕГО СЛАЙДЕРА (2016) */
-
 .third-slide__wrapper::before {
   content: "";
   width: 66px;
@@ -1000,11 +985,9 @@ img {
   position: absolute;
   margin-left: -30px;
 }
-
 /* КОНЕЦ ТРЕТЬЕЙ СТРАНИЦЫ ТРЕТЬЕГО СЛАЙДЕРА (2016) */
 
 /* СЕКЦИЯ ПЕРЕКЛЮЧАТЕЛЕЙ СЛАЙДОВ */
-
 .toggle {
   width: 2048px;
   margin-left: 109px;
@@ -1059,14 +1042,10 @@ img {
   letter-spacing: -0.01em;
   color: #ffffff;
 }
-
 /* КОНЕЦ СЕКЦИИ ПЕРЕКЛЮЧАТЕЛЕЙ СЛАЙДОВ */
-
 /* КОНЕЦ ТРЕТЬЕГО СЛАЙДЕРА */
 
-
 /* ФУТЕР */
-
 .page-footer {
   display: flex;
   justify-content: center;
@@ -1108,9 +1087,7 @@ img {
   bottom: -35px;
   left: -920px;
 }
-
 /* КОНЕЦ ФУТЕРА */
-
 
 @keyframes pulse {
   0% {
@@ -1118,15 +1095,17 @@ img {
     opacity: 0;
     background-color: #f78b1f;
   }
+
   50% {
     opacity: 0.61;
-    background-color: rgba(247,139,31,0.21);
-    background-image: linear-gradient(165.0deg, rgba(222,121,27,0.15) 7%, rgba(207,20,55,0.15) 92%);
+    background-color: rgba(247, 139, 31, 0.21);
+    background-image: linear-gradient(165deg, rgba(222, 121, 27, 0.15) 7%, rgba(207, 20, 55, 0.15) 92%);
   }
+
   100% {
     transform: scale(3.5);
     opacity: 0;
-    background-color: rgba(247,139,31,0.21);
+    background-color: rgba(247, 139, 31, 0.21);
   }
 }
 
