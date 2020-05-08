@@ -2,6 +2,12 @@
 
 <hr>
 
+[Ссылка на работу](https://rewoop.github.io/onpoint-test/)
+
+<hr>
+
+<hr>
+
 [Ссылка на задание](https://sergeyguns.github.io/onpoint-task/)
 
 <hr>
